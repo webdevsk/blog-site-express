@@ -10,6 +10,14 @@ module.exports = {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
     },
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: '2rem',
+        sm: '6rem',
+        lg: '8rem',
+      },
+    },
   },
   plugins: [],
 }

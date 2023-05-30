@@ -7,14 +7,14 @@
     <title>Blog Site Express - <%= pageTitle %></title>
     <link rel="stylesheet" href="./css/styles.css">
     <script defer src="./js/scripts.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <script defer src="./js/alpinejs@3.12.1.min.js"></script>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/inter.css">
 </head>
-<body class="bg-white dark:bg-slate-950 text-slate-950 dark:text-white font-sans bg-neutral-50">
+<body class="text-slate-950 font-sans bg-neutral-50 text-sm md:text-base xl:text-lg">
     <!-- nav bar -->
     <nav class=" text-amber-700"  x-data="{open: false}">
-        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div class="container">
           <div class="relative flex h-16 lg:h-24 items-center justify-between">
             <div class="absolute inset-y-0 left-0 flex items-center lg:hidden">
               <!-- Mobile menu button-->
@@ -39,8 +39,8 @@
               </button>
             </div>
             <div class="flex flex-1 items-center justify-center sm:items-stretch lg:justify-between">
-              <div class="tracking-[.5em] self-center text-currentColor uppercase text-lg md:text-xl">
-                Daily Journal
+              <div class="tracking-[.5em] self-center text-currentColor select-none uppercase text-lg md:text-xl">
+                <a class="block" href="/">Daily Journal</a>
               </div>
               <div class="hidden sm:ml-6 lg:block">
                 <div class="flex space-x-4">
@@ -67,7 +67,7 @@
         
         <!-- Mobile menu, show/hide based on menu state. -->
         <div class="lg:hidden" id="mobile-menu" x-show="open" x-transition @click.outside="open = false">
-          <div class="space-y-1 px-2 pb-3 pt-2">
+          <div class="bg-amber-50 space-y-1 px-2 pb-3 pt-2">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
             <% pages.map(page => {%>
                 <a href="<%= page.link %>" 

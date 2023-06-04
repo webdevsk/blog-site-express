@@ -23,7 +23,7 @@ exports.pages =  [
     {
         title: 'Publish',
         link: '/publish',
-        hidden: true
+        hidden: false
     }
 
 ]

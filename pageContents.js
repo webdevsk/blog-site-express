@@ -6,7 +6,8 @@ exports.pages =  [
     },
     {
         title: 'Blogs',
-        link: '/blogs'
+        link: '/blogs',
+        hidden: true
     },
     {
         title: 'Contact Us',
@@ -19,5 +20,10 @@ exports.pages =  [
         content: `Voluptatibus numquam placeat veritatis odio, error pariatur minus explicabo repudiandae veniam accusamus maiores enim aperiam natus vero officiis ipsam accusantium perferendis harum voluptatem culpa. Eius nihil neque perspiciatis esse dignissimos.
         Doloribus, sint distinctio impedit dignissimos excepturi laboriosam quasi nisi numquam ab ratione dolores, itaque reprehenderit! Repellat magni, dolorum voluptatibus cum eaque, iste cupiditate suscipit nihil exercitationem dolore commodi amet impedit.`
     },
+    {
+        title: 'Publish',
+        link: '/publish',
+        hidden: true
+    }
 
 ]
